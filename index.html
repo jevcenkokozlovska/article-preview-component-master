@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="article">
+        <div class="article__image">
+          <img src="./images/drawers.jpg" alt="drawers" />
+        </div>
+        <h1 class="article__title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+
+        <p class="article__text">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        
+        <div class="article__author desktop" id="article__author_desk">
+        
+          <img
+            class="article__author-img"
+            src="./images/avatar-michelle.jpg"
+            alt="avatar" id="author-img-desktop"
+          />
+          <div class="article__author-data" id="author-data-desktop">
+            <p class="article__author-name">Michelle Appleton</p>
+            <p class="article__author-date">Jun 2020</p>
+          </div>
+          
+          <div class="article__share-btn" id="share-btn-desktop">
+            <div class="socials" id="socials-desktop">
+              <p>SHARE</p>
+              <img src="./images/icon-facebook.svg" />
+              <img src="./images/icon-twitter.svg" />
+              <img src="./images/icon-pinterest.svg" />
+              <div class="arrow"></div>
+            </div>
+            <img src="./images/icon-share.svg" alt="share" />
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="article__author mobile" id="article__author_mob">
+        <img
+          class="article__author-img"
+          src="./images/avatar-michelle.jpg"
+          alt="avatar" id="author-img-mobile"
+        />
+        <div class="article__author-data" id="author-data-mobile">
+          <p class="article__author-name">Michelle Appleton</p>
+          <p class="article__author-date">Jun 2020</p>
+        </div>
+        <div class="socials" id="socials-mobile">
+          <p>SHARE</p>
+          <a href="#"><img src="./images/icon-facebook.svg" alt="fb" /></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="twttr" /></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="pntrst" /></a>
+        </div>
+        <div class="article__share-btn" id="share-btn-mobile">
+          <img src="./images/icon-share.svg" alt="share" />
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Kristina Jevčenko-Kozlovska</a>.
+      </div>
+    </main>
+    <script src="share.js" defer></script>
+  </body>
+</html>
